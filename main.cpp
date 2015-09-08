@@ -23,7 +23,8 @@ int main() {
   glfwSwapInterval(1);
   glfwShowWindow(window);
 
-  glEnable(GL_DEPTH_TEST | GL_DOUBLEBUFFER);
+  glEnable(GL_DOUBLEBUFFER);
+  glEnable(GL_DEPTH_TEST);
   glDepthFunc(GL_LESS);
 
   glClearColor(0, 0, 0, 1);
