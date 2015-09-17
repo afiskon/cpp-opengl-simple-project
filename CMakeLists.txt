@@ -5,10 +5,11 @@ find_package(OpenGL REQUIRED)
 
 add_subdirectory(glfw)
 
+include_directories(${OPENGL_INCLUDE_DIR})
 include_directories(glfw/include)
 include_directories(glm)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -Wall -Wextra -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I/usr/local/include -O2 -Wall -Wextra -std=c++11")
 
 set(SOURCE_FILES main.cpp)
 add_executable(red_triangle ${SOURCE_FILES})

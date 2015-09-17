@@ -8,8 +8,8 @@ Usage:
     mkdir build
     cd build
     cmake ..
-    make
+    make red_triangle
     ./red_triangle
 ```
 
-Tested on Linux, MacOS and Windows.
+Tested on Windows, Linux, MacOS and FreeBSD.
